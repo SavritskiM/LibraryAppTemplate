@@ -29,8 +29,8 @@ public class LibraryApp {
 		book2.pages =new String[] {"1", "2", "4", "5"};
 		library.addBook(book1);
 		library.addBook(book2);
-		for(int i=0;i<library.Book.length;i++){
-			System.out.println(library.Book[i].title);
+		for(int i=0;i<library.books.length;i++){
+			System.out.println(library.books[i].title);
 		}
 
 
