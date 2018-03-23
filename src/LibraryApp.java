@@ -1,8 +1,9 @@
-
 public class LibraryApp {
 	private static Library library = new Library();
 
 	public static void main(String[] args) {
+		
+		// Print Members
 		library.members=new Member[0];
 		Address address1=new Address();
 		address1.city="Thornhill";
@@ -17,6 +18,8 @@ public class LibraryApp {
 		for(int i=0;i<library.members.length;i++){
 			System.out.println(library.members[i].name);
 		}
+		
+		// Print Books
 		library.books = new Book[0];
 		Book book1 = new Book();
 		book1.title = "To kill a Mockingbird ";
@@ -32,6 +35,15 @@ public class LibraryApp {
 		for(int i=0;i<library.books.length;i++){
 			System.out.println(library.books[i].title);
 		}
+		
+		// Print Address
+		Address location=new Address();
+		location.city="Thornhill";
+		location.postalCode="123456";
+		location.province="ON";
+		location.street="Leslie";
+		library.location=location;
+		System.out.println(library.location.toString());
 
 
 	}
