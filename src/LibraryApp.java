@@ -15,6 +15,9 @@ public class LibraryApp {
 		member1.address=address1;
 		member1.birthyear=2001;
 		library.addMember(member1);
+		
+		System.out.println(" the members in this library are: ");
+		
 		for(int i=0;i<library.members.length;i++){
 			System.out.println(library.members[i].name);
 		}
@@ -32,6 +35,7 @@ public class LibraryApp {
 		book2.pages =new String[] {"1", "2", "4", "5"};
 		library.addBook(book1);
 		library.addBook(book2);
+		System.out.println(" the books in this library are: ");
 		for(int i=0;i<library.books.length;i++){
 			System.out.println(library.books[i].title);
 		}
@@ -43,6 +47,7 @@ public class LibraryApp {
 		location.province="ON";
 		location.street="Leslie";
 		library.location=location;
+		System.out.println(" our mailing address is: ");
 		System.out.println(library.location.toString());
 
 
