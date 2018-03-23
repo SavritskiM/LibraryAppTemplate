@@ -5,7 +5,7 @@ public class Member {
 
     String name;
     int birthyear;
-    Address address = new Address;
+    Address address = new Address();
     
 
     /**
