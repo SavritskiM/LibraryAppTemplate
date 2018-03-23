@@ -3,6 +3,10 @@
  */
 public class Member {
 
+    String name;
+    int birthyear;
+    Address address = new Address;
+    
 
     /**
      * getAge() : int
@@ -10,6 +14,11 @@ public class Member {
      * @return
      *          returns the member's age as an int.
      */
+    private int getAge(){
+     int age;
+     age = 2018 - birthyear;
+     return age;
+    }
 
 
 
@@ -23,6 +32,10 @@ public class Member {
      * @param book
      *          The book to read.
      */
+    private void int readBook(book){
+    System.out.println("you are reading: " + book);
+        
+    }
 
 
 
