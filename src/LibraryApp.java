@@ -17,6 +17,7 @@ public class LibraryApp {
 		for(int i=0;i<library.members.length;i++){
 			System.out.println(library.members[i].name);
 		}
+		library.books = new Book[0];
 		Book book1 = new Book();
 		book1.title = "To kill a Mockingbird ";
 		book1.author = "tom jeff";
