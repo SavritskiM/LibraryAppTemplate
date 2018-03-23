@@ -32,7 +32,7 @@ public class Member {
      * @param book
      *          The book to read.
      */
-    private void int readBook(book.title){
+    private void  readBook(Book book){
     System.out.println("you are reading: " + book.title);
         
     }
