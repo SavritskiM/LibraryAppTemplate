@@ -18,7 +18,7 @@ public class Address {
      * @return
      *          String consisting of a formatted mailing address.
      */
-    public String toString() {
+     public String toString() {
         return this.street + ", " + this.city + ", " + this.province + " " + this.postalCode;
-    }
+     }
 }
