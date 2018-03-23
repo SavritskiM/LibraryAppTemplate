@@ -2,7 +2,10 @@
  * Library class
  */
 public class Library {
-
+    String name;
+	Address location;
+	Book[]books;
+	Member[]members;
 
     /**
      * addBook(Book) : void
@@ -14,11 +17,14 @@ public class Library {
      * @param book
      *          A new book object to add to the books list
      */
-
-
-
-
-
+     public void addBook(Book e){
+	    Book[]newBook=Book[books.length+1];
+	    for(int i=0;i<books.length;i++){
+	    	newBook[i]=books[i];
+	    }
+	    newBook[books.length]=e;
+	       this.books=newBook;
+    }
 
     /**
      * addMember(Member) : void
@@ -30,10 +36,12 @@ public class Library {
      * @param member
      *          A new member object to add to the members list
      */
-
-
-
-
-
-
+     public void addMember(Member e){
+		Member[]newMember=Member[Members.length+1];
+		for(int i=0;i<Members.length;i++){
+			newMember[i]=Members[i];
+		}
+		newMember[Members.length]=e;
+		this.Members=newMember;
+	}
 }
