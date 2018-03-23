@@ -5,7 +5,7 @@ public class Member {
 
     String name;
     int birthyear;
-    Address address = new Address();
+    Address address;
     
 
     /**
@@ -32,7 +32,7 @@ public class Member {
      * @param book
      *          The book to read.
      */
-    private void int readBook(book){
+    private void int readBook(book.title){
     System.out.println("you are reading: " + book.title);
         
     }
